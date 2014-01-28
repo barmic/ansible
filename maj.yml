@@ -1,0 +1,4 @@
+- hosts: admin-barmic
+  tasks:
+    - name: Mise à jour les paquets
+      apt: upgrade=safe update_cache=yes

@@ -1,0 +1,4 @@
+- hosts: barmic
+  task:
+    - name: Installation de postfix
+      apt: name=postfix state=installed
