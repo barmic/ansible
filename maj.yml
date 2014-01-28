@@ -1,4 +1,8 @@
-- hosts: admin-barmic
+- hosts: server
+  gather_facts: False
+  sudo: yes
+  sudo_user: root
   tasks:
     - name: Mise à jour les paquets
+      #command: whoami
       apt: upgrade=safe update_cache=yes
